@@ -11,12 +11,15 @@ public class SceneHandler : MonoBehaviour
     {
         Messenger<string>.AddListener( "LoadScene", LoadScene );
         Messenger<string>.AddListener( "UnLoadScene", UnLoadScene );
+        Messenger<string>.AddListener( "SetActiveScene", SetActiveScene );
     }
 
     private void OnDisable()
     {
         Messenger<string>.RemoveListener( "LoadScene", UnLoadScene );
         Messenger<string>.RemoveListener( "UnLoadScene", UnLoadScene );
+        Messenger<string>.RemoveListener( "SetActiveScene", SetActiveScene );
+
     }
    
     // Start is called before the first frame update
@@ -34,5 +37,10 @@ public class SceneHandler : MonoBehaviour
     private void UnLoadScene( string sceneToUnload )
     {
         SceneManager.UnloadSceneAsync( sceneToUnload );
+    }
+
+    private void SetActiveScene( string sceneToActivate )
+    {
+        SceneManager.SetActiveScene( SceneManager.GetSceneByName( sceneToActivate ) );
     }  
 }
