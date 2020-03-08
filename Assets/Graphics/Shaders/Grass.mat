@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_TriplanarShader
+  m_Name: Grass
   m_Shader: {fileID: -6465566751694194690, guid: 6a2a2f775f324aa4397a59d1b2257417,
     type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -23,6 +23,6 @@ Material:
     m_Floats:
     - Vector1_6B369E4F: 0
     m_Colors:
-    - Color_6ADF2CA8: {r: 0.96470594, g: 0.5411765, b: 0.36078432, a: 1}
-    - Color_962FBABD: {r: 0.7803922, g: 0.28235295, b: 0.227451, a: 1}
-    - Color_AEA63E83: {r: 0.9568628, g: 0.43137258, b: 0.38823533, a: 1}
+    - Color_6ADF2CA8: {r: 0.32680672, g: 0.4811321, b: 0.26099148, a: 1}
+    - Color_962FBABD: {r: 0.29805097, g: 0.5754717, b: 0.1764418, a: 1}
+    - Color_AEA63E83: {r: 0.2924528, g: 0.16070852, b: 0.095185116, a: 1}

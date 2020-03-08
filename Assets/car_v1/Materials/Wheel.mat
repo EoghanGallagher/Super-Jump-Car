@@ -8,9 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Wheel
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: -6465566751694194690, guid: 6a2a2f775f324aa4397a59d1b2257417,
+    type: 3}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -56,6 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_6B369E4F: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -73,5 +75,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Color_6ADF2CA8: {r: 0.05660379, g: 0.05099681, b: 0.05099681, a: 1}
+    - Color_962FBABD: {r: 0.11320752, g: 0.08917762, b: 0.08917762, a: 1}
+    - Color_AEA63E83: {r: 0.1137255, g: 0.09019608, b: 0.09019608, a: 1}
     - _Color: {r: 0.033102434, g: 0.033102434, b: 0.033102434, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
