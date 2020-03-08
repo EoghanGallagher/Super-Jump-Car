@@ -7,13 +7,13 @@ public class SceneLoader : MonoBehaviour
    [SerializeField] private string sceneToLoad;
    [SerializeField] private string sceneToUnload; 
 
-   public void LoadScene( string sceneToLoad )
+   public void LoadScene()
    {
        Messenger<string>.Broadcast( "LoadScene", sceneToLoad );
    }
 
-   public void UnLoadScene( string sceneToUnLoad )
+   public void UnLoadScene()
    {
-       Messenger<string>.Broadcast( "UnLoadScene", sceneToUnLoad );
+       Messenger<string>.Broadcast( "UnLoadScene", sceneToUnload  );
    }
 }
