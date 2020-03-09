@@ -25,20 +25,22 @@ public class Car : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            m_Rigidbody.velocity = transform.forward * m_Speed;
+            //m_Rigidbody.velocity = transform.forward * m_Speed;
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             //Move the Rigidbody backwards constantly at the speed you define (the blue arrow axis in Scene view)
-            m_Rigidbody.velocity = -transform.forward * m_Speed;
+            //m_Rigidbody.velocity = -transform.forward * m_Speed;
+             transform.position = Vector3.Lerp(transform.position, new Vector3( transform.position.x, transform.position.y, transform.position.z + 2), 4.0f );
         }
 
-        // if (Input.GetKey(KeyCode.RightArrow))
-        // {
-        //     //Rotate the sprite about the Y axis in the positive direction
-        //     transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * m_Speed, Space.World);
-        // }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+             //Rotate the sprite about the Y axis in the positive direction
+                //transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * m_Speed, Space.World);
+                transform.position = Vector3.Lerp(transform.position, new Vector3( transform.position.x, transform.position.y, transform.position.z - 2), 4.0f );
+        }
 
         // if (Input.GetKey(KeyCode.LeftArrow))
         // {
