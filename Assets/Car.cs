@@ -14,7 +14,7 @@ public class Car : MonoBehaviour
         //Fetch the Rigidbody component you attach from your GameObject
         m_Rigidbody = GetComponent<Rigidbody>();
         //Set the speed of the GameObject
-        m_Speed = 50.0f;
+        m_Speed = 25.0f;
     }
 
     private void Update()
